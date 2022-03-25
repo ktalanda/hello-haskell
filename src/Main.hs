@@ -1,5 +1,9 @@
 module Main where
 
+greet :: String -> String
+greet name = "Hello " ++ name ++ "!"
+
 main :: IO ()
 main = do
-  putStrLn "hello world"
+  name <- getLine
+  putStrLn (greet name)
