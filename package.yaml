@@ -1,0 +1,29 @@
+name:                hello-haskell
+version:             0.1.0.0
+github:              "ktalanda/hello-haskell"
+license:             BSD3
+author:              "Kamil Talanda"
+maintainer:          "kamil0916@gmail.com"
+copyright:           "2022 Kamil Talanda"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/githubuser/myserver#readme>
+
+library:
+  source-dirs: src
+
+dependencies:
+- base
+- time
+- text
+- aeson
+
+executables:
+  hello-haskell-exe:
+    main:                Main.hs
+    source-dirs:         app
+    dependencies:
+    - base
+    - hello-haskell
