@@ -19,6 +19,7 @@ dependencies:
 - time
 - text
 - aeson
+- scotty
 
 executables:
   hello-haskell-exe:
